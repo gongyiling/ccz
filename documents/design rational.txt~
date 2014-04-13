@@ -9,7 +9,7 @@
 		area
 	sound
 		background sound
-		active sound
+		activity sound
 		
 2. entity interactive tree
-	
+	role <-> role
