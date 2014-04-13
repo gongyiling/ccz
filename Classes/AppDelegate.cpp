@@ -49,8 +49,14 @@ bool AppDelegate::applicationDidFinishLaunching()
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_BLACKBERRY)
     CCFileUtils::sharedFileUtils()->addSearchPath("script");
 #endif
+    CCFileUtils::sharedFileUtils()->addSearchPath("scripts");
+    CCFileUtils::sharedFileUtils()->addSearchPath("maps");
+    CCFileUtils::sharedFileUtils()->addSearchPath("images");
+    CCFileUtils::sharedFileUtils()->addSearchPath("sounds");
+    CCFileUtils::sharedFileUtils()->addSearchPath("fonts");
+    pEngine->addSearchPath("scripts");
 
-    std::string path = CCFileUtils::sharedFileUtils()->fullPathForFilename("hello.lua");
+    std::string path = CCFileUtils::sharedFileUtils()->fullPathForFilename("main.lua");
     pEngine->executeScriptFile(path.c_str());
 
     return true;
