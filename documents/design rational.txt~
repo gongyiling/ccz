@@ -1,0 +1,15 @@
+1. entity include tree
+	map
+		role
+			weapon
+			item
+			pack
+				weapon
+				item
+		area
+	sound
+		background sound
+		active sound
+		
+2. entity interactive tree
+	
