@@ -1,4 +1,4 @@
-Pack = {id = 0, num = 0}
+Pack = {items = {}, weapons = {}}
 
 function Pack:new(o)
     o = o or {}

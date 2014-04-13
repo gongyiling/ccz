@@ -1,9 +1,9 @@
-Role = {id = 0, num = 0}
+require "extern"
 
-function Role:new(o)
-    o = o or {}
-    setmetatable(o, self)
-    self.__index = self
-    return o    
-end
+Role = class("Role" 
+function (fileName)
+    local sprite = CCSprite:create()    
+     
+    return sprite
+end)
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="EK" tilewidth="32" tileheight="32">
-  <image source="../../../../../usr/local/cocos2d-x-2.2.2/projects/ccz/Resources/maps/EK/EK.png" width="256" height="1216"/>
+  <image source="EK/EK.png" width="256" height="1216"/>
  </tileset>
  <tileset firstgid="305" name="EK_01" tilewidth="32" tileheight="32">
-  <image source="../../../../../usr/local/cocos2d-x-2.2.2/projects/ccz/Resources/maps/EK/EK_01.png" width="96" height="128"/>
+  <image source="EK/EK_01.png" width="96" height="128"/>
  </tileset>
  <layer name="Background" width="20" height="20">
   <data encoding="base64" compression="zlib">

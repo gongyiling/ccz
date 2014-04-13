@@ -1,9 +1,7 @@
-Map = {id = 0, num = 0}
+require "extern"
 
-function Map:new(o)
-    o = o or {}
-    setmetatable(o, self)
-    self.__index = self
-    return o    
+Map = class("Map", 
+function(fileName) 
+    return CCTMXTiledMap:create(fileName)
 end
-
+)

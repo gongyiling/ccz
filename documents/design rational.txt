@@ -14,4 +14,6 @@
 2. entity interactive tree
 	role <-> role
 	role <-> area		
+	role <-> weapon
+	role <-> item
 

@@ -1,6 +1,7 @@
+require "map"
 
 cclog = function(...)
-    print(string.format(...))
+    io.stderr:write(string.format(...))
 end
 
 -- for CCLuaEngine traceback
@@ -12,7 +13,10 @@ function __G__TRACKBACK__(msg)
 end
 
 function main()
-    print("main called")
+    scene = CCScene:create()
+    map = Map.new("1.tmx")
+    scene:addChild(map)
+    CCDirector:sharedDirector():runWithScene(scene)
 end
 
 xpcall(main, __G__TRACKBACK__)
