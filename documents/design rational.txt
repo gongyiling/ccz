@@ -13,4 +13,5 @@
 		
 2. entity interactive tree
 	role <-> role
-	
+	role <-> area		
+
