@@ -1,7 +1,7 @@
 require "map"
 
 cclog = function(...)
-    io.stderr:write(string.format(...))
+    print(string.format(...))
 end
 
 -- for CCLuaEngine traceback
@@ -13,9 +13,11 @@ function __G__TRACKBACK__(msg)
 end
 
 function main()
+	cclog("here")
     scene = CCScene:create()
     map = Map.new("1.tmx")
     scene:addChild(map)
+    cclog("here")
     CCDirector:sharedDirector():runWithScene(scene)
 end
 
