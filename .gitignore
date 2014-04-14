@@ -3,3 +3,14 @@
 ccz
 bin
 obj
+*.obj
+*.exe
+*.lib
+*.dll
+*.exp
+*.log
+*.ilk
+*.tlog
+*.pdb
+*.idb
+*.sdf
